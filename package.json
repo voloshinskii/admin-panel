@@ -2,6 +2,7 @@
   "name": "untitled",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ruinername.github.io/admin-panel",
   "dependencies": {
     "@vkontakte/icons": "^1.7.0",
     "@vkontakte/vkui": "^2.23.4",
@@ -11,7 +12,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
