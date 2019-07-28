@@ -60,7 +60,9 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      type: 0
+      type: 0,
+      token: '',
+      value: ''
     };
 
     this.onChange = this.onChange.bind(this);
@@ -101,6 +103,7 @@ class App extends React.Component {
                   top="Токен"
                   placeholder="Токен"
                   name="token"
+                  onChange={this.onChange}
               />
               <Select name="type" value={this.state.type} onChange={this.onChange} top="Данные" placeholder="Данные">
                 {types.map((item, index) => {
@@ -109,7 +112,7 @@ class App extends React.Component {
               </Select>
               {this.state.type !== undefined &&
                 types[this.state.type].inputs.map((Item, value) => {
-                  return(Item)
+                  return(React.cloneElement(Item, {onChange: this.onChange}))
                 })
               }
               <Button size="xl" onClick={this.onSubmit}>Обновить информацию</Button>
