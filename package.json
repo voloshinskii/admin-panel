@@ -2,7 +2,7 @@
   "name": "untitled",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ruinername.github.io/admin-panel",
+  "homepage": "http://admin.voloshinskii.ru/",
   "dependencies": {
     "@vkontakte/icons": "^1.7.0",
     "@vkontakte/vkui": "^2.23.4",
