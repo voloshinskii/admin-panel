@@ -75,7 +75,7 @@ class App extends React.Component {
   onSubmit() {
     let key = types[this.state.type].key;
     if(key !== "news"){
-      fetch("http://84.201.149.111:80/updateData", {
+      fetch("http://84.201.149.111:1337/updateData", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
